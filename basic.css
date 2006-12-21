@@ -1,0 +1,32 @@
+h1, h2 {text-align:center;}
+
+div.image {}
+
+p.image {text-align:center;vertical-align:middle;
+         background-color:black;
+         padding-top:150;
+         padding-bottom:150;}
+
+p.image_gray {text-align:center;vertical-align:middle;
+              background-color:gray;
+              padding-top:150;
+              padding-bottom:150;}
+
+
+p.image_plain {text-align:center;vertical-align:middle;
+              background-color:white;}
+
+
+
+
+p.image_pad {text-align:center;vertical-align:middle;
+             padding:20;}
+
+p.image_caption {text-align:center;}
+
+
+p.large_print_center {text-align:center;font-size:30;}
+
+
+img.border {border:"10x10";}
+
