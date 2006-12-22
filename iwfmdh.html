@@ -1,7 +1,7 @@
 <!-- iwfmdh.html -->
 <!-- Created by Laurence Finston 2006.12.22. -->
 
-<!-- $Id: iwfmdh.html,v 1.4 2006/12/22 09:57:48 ldf Exp $ -->
+<!-- $Id: iwfmdh.html,v 1.5 2006/12/22 10:41:21 ldf Exp $ -->
      
 <!-- * (1) Header  -->
 
@@ -80,16 +80,18 @@ Table of Contents
 <tr><td><a href="#Documentation"> Documentation</a> 
 
 <tr><td><a href="#OAI"> OAI (Open Archives Initiative)</a> 
-<tr><td><td><a href="#dctest"> dc_test (Datenbank)</a> 
+<tr><td><td><a href="#dctest"> dc_test (Database)</a> 
 <tr><td><td><a href="#ATest"> ATest (C++ Program)</a> 
 
 <tr><td><a href="#z3950"> Z39.50 (Pica)</a> 
 
-<tr><td><td><a href="#picadb"> PICA_DB (Datenbank)</a> 
+<tr><td><td><a href="#picadb"> PICA_DB (Database)</a> 
 
 <tr><td><td><a href="#ZTest"> ZTest (C++ Program)</a> 
 
 <tr><td><a href="#Scantest"> Scantest (C++ Program)</a> 
+
+<tr><td><a href="#lodb"> LO_DB (Database)</a> 
 
 <tr><td><a href="#Links"> Links </a>
 
@@ -120,8 +122,50 @@ The IWF Metadata Harvester is a package for retrieving metadata from servers,
 writing it to databases, and representing it in human-readable form.
 It currently retrieves data from servers using two different sets of standards:
 The Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) and
-Z39.50.
+Z39.50.  
 </p> 
+
+<!-- LDF 2006.12.22.  -->
+<p> 
+OAI servers provide records in the form of XML files in a format based on 
+the Dublin Core standard.
+Z39.50 servers, on the other hand, can provide records in a variety of formats, 
+the most common of which is USMARC.  The IWF Metadata Harvester can currently 
+only process records from z39.50 servers in the Pica format, which is widespread 
+in the Netherlands and Germany.
+</p> 
+
+<!-- LDF 2006.12.22.  -->
+<p> 
+The IWF Metadata Harvester consists of 3 programs written in C++ and 
+three databases:
+</p> 
+
+<table>
+<tr><td><b>ATest</b>: <td>C++ program for retrieving data from OAI servers
+(see <a href=#ATest>ATest</a>)
+
+<tr><td><b>dc_test</b>: <td>Database for storing the data retrieved by ATest
+(see <a href=#dctest>dc_test</a>)
+
+<tr><td><b>ZTest</b>: <td>C++ program for retrieving data in Pica format 
+                         from Z39.50 servers
+(see <a href=#ZTest>ZTest</a>)
+
+<tr><td><b>PICA_DB</b>: <td>Database for storing the data retrieved by ZTest
+(see <a href=#picadb>PICA_DB</a>)
+
+<tr><td><b>Scantest</b>: 
+<td>C++ program implementing an interpreter for 
+    controlling the other C++ programs and accessing
+    the databases.           
+(see <a href=#Scantest>Scantest</a>)
+
+<tr><td><b>LO_DB</b>: <td>A database with a reduced set of tables and fields 
+                          for use in the &ldquo;Lectures Online&rdquo; Project
+                          of the IWF Wissen und Medien gGmbH                           
+(see <a href=#lodb>LO_DB</a>)
+</table>
 
 
 <!-- ---------------- -->
@@ -275,7 +319,7 @@ OAI (Open Archives Initiative)
 
 <h3 align="center"> 
 <a name="dctest">
-dc_test (Datenbank)
+dc_test (Database)
 </a>
 </h3>
 
@@ -332,7 +376,7 @@ Z39.50 (Pica)
 
 <h3 align="center"> 
 <a name="picadb">
-PICA_DB (Datenbank)
+PICA_DB (Database)
 </a>
 </h3>
 
@@ -382,6 +426,28 @@ ScanTest (C++ Program)
 <hr size="2" color="black">
 <!-- End of "Back to" block. -->
 <!-- ---------------- -->
+
+
+<!-- ** (2) LO_DB  -->
+
+
+<h2 align="center"> 
+<a name="lodb">
+LO_DB (Database)
+</a>
+</h3>
+
+
+<!-- ---------------- -->
+<!-- "Back to" block. -->
+<hr size="2" color="black">
+<a href=#Contents> Back to contents</a>
+<br> 
+<a href=#Top> Back to top</a>
+<hr size="2" color="black">
+<!-- End of "Back to" block. -->
+<!-- ---------------- -->
+
 
 <!-- * (1) Links  -->
 
