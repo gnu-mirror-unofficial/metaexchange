@@ -1,7 +1,7 @@
 <!-- iwfmdh.html -->
 <!-- Created by Laurence Finston 2006.12.22. -->
 
-<!-- $Id: iwfmdh.html,v 1.5 2006/12/22 10:41:21 ldf Exp $ -->
+<!-- $Id: iwfmdh.html,v 1.6 2006/12/22 11:25:19 ldf Exp $ -->
      
 <!-- * (1) Header  -->
 
@@ -70,17 +70,26 @@ Table of Contents
 </h2>
 
 <table>
+
 <tr><td><a href="#top"> Top</a> 
 
-<tr><td><a href="#Introduction"> Introduction </a>
+<tr><td><a href="#Introduction"> Introduction</a>
+
+<tr><td><td><a href="#Platforms">
+Supported Platforms and Portability</a>
 
 <tr><td><a href="#Late_Breaking_News"> Late Breaking News </a> 
 
 <tr><td><a href="#Distribution"> Distribution</a> 
+
+
 <tr><td><a href="#Documentation"> Documentation</a> 
 
+
 <tr><td><a href="#OAI"> OAI (Open Archives Initiative)</a> 
+
 <tr><td><td><a href="#dctest"> dc_test (Database)</a> 
+
 <tr><td><td><a href="#ATest"> ATest (C++ Program)</a> 
 
 <tr><td><a href="#z3950"> Z39.50 (Pica)</a> 
@@ -92,6 +101,8 @@ Table of Contents
 <tr><td><a href="#Scantest"> Scantest (C++ Program)</a> 
 
 <tr><td><a href="#lodb"> LO_DB (Database)</a> 
+
+<tr><td><a href="#Mailinglist"> Mailing List</a>
 
 <tr><td><a href="#Links"> Links </a>
 
@@ -132,7 +143,8 @@ the Dublin Core standard.
 Z39.50 servers, on the other hand, can provide records in a variety of formats, 
 the most common of which is USMARC.  The IWF Metadata Harvester can currently 
 only process records from z39.50 servers in the Pica format, which is widespread 
-in the Netherlands and Germany.
+in the Netherlands and Germany.  In the future, I hope to extend it to process
+records in USMARC and other formats as well.
 </p> 
 
 <!-- LDF 2006.12.22.  -->
@@ -168,6 +180,29 @@ three databases:
 </table>
 
 
+<!-- ** (2) Supported Platforms and Portability  -->
+
+<h3 align="center"> 
+<a name="Platforms">
+Supported Platforms and Portability
+</a>
+</h3>
+
+<!-- LDF 2006.12.22.  -->
+<p> 
+
+
+The programs <a href=#ATest>ATest</a> and <a href=#zTest>ZTest</a> were developed 
+using Microsoft Visual C++ in Microsoft Visual Studio under Microsoft Windows
+and the databases <a href=#dctest>dc_test</a>, <a href=#picadb>PICA_DB</a>
+and <a href=#lodb>LO_DB</a> were developed using Microsort SQL Servers.
+The program <a href=#Scantest>Scantest</a> was also originally developed using 
+MS Visual C++, but it is currently being developed using the GNU Compiler Collection 
+(GCC) under Windows.  Unlike ATest and ZTest, Scantest uses only Standard C++ and the 
+C++ Standard Template Library.
+</p> 
+
+
 <!-- ---------------- -->
 <!-- "Back to" block. -->
 <hr size="2" color="black">
@@ -177,6 +212,7 @@ three databases:
 <hr size="2" color="black">
 <!-- End of "Back to" block. -->
 <!-- ---------------- -->
+
 
 
 <!-- * (1) Late Breaking News  -->
@@ -449,6 +485,41 @@ LO_DB (Database)
 <!-- ---------------- -->
 
 
+<!-- * (1) Mailing List  -->
+
+<h2 align="center">
+<a name="Mailinglist">
+Mailing List
+</a>
+</h2>
+
+The
+<a href="http://lists.nongnu.org/mailman/listinfo/iwf-mdh-help">
+iwf-mdh-help mailing list</a>
+is available for users to ask questions and get help.
+The address is <b>iwf-mdh-help-*-AT-*-iwf-mdh-help@nongnu.org</b>
+(Replace <q>-*-AT-*-</q> with <q>@</q> for the email address).
+However, <i>please note that you must subscribe to the list in order to be
+able to post to it</i>.  This is to prevent spam being sent to this list.
+In addition, all postings from non-subscribers are discarded 
+with no notification, so that innocent parties, whose addresses 
+may be being used by spammers, will not receive erroneous 
+rejection notifications.  You can subscribe to the 
+iwf-mdh-help mailing list 
+<a href="http://lists.nongnu.org/mailman/listinfo/iwf-mdh-help">
+here</a>. 
+
+
+<!-- ---------------- -->
+<!-- "Back to" block. -->
+<hr size="2" color="black">
+<a href=#Contents> Back to contents</a>
+<br> 
+<a href=#Top> Back to top</a>
+<hr size="2" color="black">
+<!-- End of "Back to" block. -->
+<!-- ---------------- -->
+
 <!-- * (1) Links  -->
 
 <h2 align="center">
@@ -505,6 +576,8 @@ email: <b>lfinsto1-*-AT-*-gwdg.de</b>
 Please use only one address at a time!
 (Replace <q>-*-AT-*-</q> with <q>@</q> for the email addresses.)
 </p>
+
+
 
 <p>
 IWF Wissen und Medien gGmbH
